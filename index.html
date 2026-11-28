@@ -3,49 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bhagyomi — Couple adventures, Sahyadri & Himalayan treks, road trips, Dharmic heritage, home kitchen recipes, and community seva." />
-  <title>Bhagyomi | Adventure, Dharmic Heritage & Mindful Couple Living</title>
+  <meta name="description" content="Bhagyomi — A Sanatan Yatra. Couple treks, Sahyadri & Himalayan routes, road trips, Dharmic heritage, home recipes, and seva." />
+  <title>Bhagyomi | A Sanatan Yatra — Adventure, Dharma & Mindful Couple Living</title>
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
   <header class="navbar">
     <div class="container nav-inner">
-      <a href="#top" class="brand">BHAGYOMI<span>.</span></a>
+      <a href="index.html" class="brand-wrap">
+        <div class="logo-ring">
+          <img src="assets/images/logo.jpg" alt="Bhagyomi Logo" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">BHAGYOMI</span>
+          <span class="brand-sub">A Sanatan Yatra</span>
+        </div>
+      </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
       <nav class="nav-links" id="navLinks">
         <a href="#pillars">Explore</a>
         <a href="#guides">Guides</a>
-        <a href="#community">Seva & Events</a>
-        <a href="#about">Our Ethos</a>
-        <a href="https://www.instagram.com/bhagyomidiaries/" target="_blank" rel="noopener" class="nav-cta">Instagram</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.instagram.com/bhagyomidiaries/" target="_blank" rel="noopener" class="nav-cta">@bhagyomidiaries</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section id="top" class="hero">
-    <div class="container hero-content">
-      <span class="badge">Working Engineers • Weekend Explorers • Dharmic Living</span>
-      <h1>Purposeful Adventures, Rooted in <span class="accent">Dharma</span>.</h1>
-      <p>
-        From steep Sahyadri rock patches and highway rides to ancient temples, wholesome home cooking,
-        and fort cleanups — detailed, no-fluff guides for couples who want more out of their weekends.
-      </p>
-      <div class="hero-actions">
-        <a href="#guides" class="btn btn-primary">Browse Field Guides</a>
-        <a href="#community" class="btn btn-outline">Join Next Seva Drive</a>
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">Working Engineers • Weekend Explorers • Sanatan Yatra</span>
+        <h1>Purposeful Adventures, Rooted in <span class="accent">Dharma</span>.</h1>
+        <p>
+          From steep Sahyadri rock patches and highway rides to ancient temples, wholesome home cooking,
+          and fort cleanups — practical, no-fluff blueprints for couples who want more from their weekends.
+        </p>
+        <div class="hero-actions">
+          <a href="treks/moroshi-bhairavgad.html" class="btn btn-primary">Read Featured Trek Guide</a>
+          <a href="#guides" class="btn btn-outline">Browse All Guides</a>
+        </div>
+      </div>
+      <div>
+        <div class="hero-emblem-ring">
+          <img src="assets/images/logo.jpg" alt="Bhagyomi - A Sanatan Yatra Emblem" />
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 5 Core Pillars -->
   <section id="pillars" class="section">
     <div class="container">
       <div class="section-header">
         <h2>Five Pillars of Bhagyomi</h2>
-        <p>Click any pillar below to filter our detailed guides and itineraries.</p>
+        <p>Click any pillar below to filter our field guides and itineraries.</p>
       </div>
 
       <div class="pillar-grid">
@@ -82,7 +95,6 @@
     </div>
   </section>
 
-  <!-- Interactive Guides Section -->
   <section id="guides" class="section section-alt">
     <div class="container">
       <div class="section-header">
@@ -90,7 +102,6 @@
         <p>Short Reels on Instagram — complete timings, budgets, and safety breakdowns right here.</p>
       </div>
 
-      <!-- Interactive Filter Bar -->
       <div class="filter-bar" role="tablist" aria-label="Filter guides by category">
         <button class="filter-btn active" data-filter="all">All Guides</button>
         <button class="filter-btn" data-filter="treks">Treks & Endurance</button>
@@ -100,15 +111,14 @@
         <button class="filter-btn" data-filter="community">Seva & Events</button>
       </div>
 
-      <!-- Guide Cards Grid -->
       <div class="guide-grid" id="guideGrid">
         <article class="guide-card" data-category="treks">
-          <span class="card-pill">Treks & Endurance</span>
+          <span class="card-pill">Treks & Endurance • Live Guide</span>
           <h3>Moroshi Bhairavgad Trek: Complete Weekend Guide from Mumbai</h3>
-          <p>Night departure timings, vertical rock patch safety, rappelling prep, local dhaba stops, and total cost breakdown.</p>
+          <p>10 PM Dadar departure, vertical rock patch climb, rappelling descent, Manu's Dhaba meals, safety checklist, and budget.</p>
           <div class="card-meta">
-            <span>Grade: Hard</span>
-            <button class="read-more" data-guide="bhairavgad">Quick Preview →</button>
+            <span>Grade: Hard / Technical</span>
+            <a href="treks/moroshi-bhairavgad.html" class="read-more">Read Full Guide →</a>
           </div>
         </article>
 
@@ -117,18 +127,18 @@
           <h3>Long-Distance Motorcycle Touring as a Couple: Rider & Pillion Checklist</h3>
           <p>How to pack light, prevent pillion fatigue on highways, intercom setup, and essential safety gear for Indian roads.</p>
           <div class="card-meta">
-            <span>8 min read</span>
-            <button class="read-more" data-guide="bike-touring">Quick Preview →</button>
+            <span>Coming Soon</span>
+            <button class="read-more" data-guide="bike-touring">Outline Preview →</button>
           </div>
         </article>
 
         <article class="guide-card" data-category="heritage">
           <span class="card-pill">Dharmic Heritage</span>
           <h3>Planning a Peaceful Weekend Temple & Fort Circuit in Maharashtra</h3>
-          <p>Darshan timings, dress etiquette, historical context, and how to turn a regular road trip into a meaningful yatra.</p>
+          <p>Darshan timings, dress etiquette, historical context, and turning a regular road trip into a meaningful yatra.</p>
           <div class="card-meta">
-            <span>Heritage Guide</span>
-            <button class="read-more" data-guide="heritage-circuit">Quick Preview →</button>
+            <span>Coming Soon</span>
+            <button class="read-more" data-guide="heritage-circuit">Outline Preview →</button>
           </div>
         </article>
 
@@ -137,8 +147,8 @@
           <h3>High-Protein Sattvic Recovery Meals After a Half Marathon or Trek</h3>
           <p>Simple, home-cooked recipes that refuel muscles fast without heavy restaurant food or complicated ingredients.</p>
           <div class="card-meta">
-            <span>Recipes</span>
-            <button class="read-more" data-guide="recovery-meals">Quick Preview →</button>
+            <span>Coming Soon</span>
+            <button class="read-more" data-guide="recovery-meals">Outline Preview →</button>
           </div>
         </article>
 
@@ -147,77 +157,56 @@
           <h3>How to Organize a Responsible Fort Cleanup & Plantation Drive</h3>
           <p>Permissions, waste-sorting supplies, safety briefing checklist, and how to volunteer with us on upcoming drives.</p>
           <div class="card-meta">
-            <span>Community</span>
-            <button class="read-more" data-guide="fort-cleanup">Quick Preview →</button>
+            <span>Coming Soon</span>
+            <button class="read-more" data-guide="fort-cleanup">Outline Preview →</button>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Community & Group Events CTA -->
   <section id="community" class="section">
     <div class="container">
       <div class="event-box">
         <div>
-          <span class="badge">Upcoming Community Drives</span>
+          <span class="badge">Upcoming Community Seva</span>
           <h2>Join Our Next Trek, Cleanup, or Plantation Drive</h2>
           <p>
             We organize small, disciplined weekend groups for trail cleanups, fort conservation,
-            and heritage treks. Register your interest to get notified before slots fill up.
+            and heritage treks. Reach out to register your interest before slots fill up.
           </p>
         </div>
         <div class="event-actions">
-          <!-- Replace '#' with your free Google Form or Tally.so registration link -->
-          <a href="#contact" class="btn btn-primary">Register via Event Form</a>
-          <span class="helper-note">100% free community registration • Updates via email/Instagram</span>
+          <a href="contact.html" class="btn btn-primary">Register Interest →</a>
+          <span class="helper-note">100% community driven • Updates via @bhagyomidiaries</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About & Community Ethos -->
-  <section id="about" class="section section-alt">
-    <div class="container about-grid">
-      <div>
-        <h2>About Bhagyomi</h2>
-        <p>
-          We are a working engineer couple proving that you don't need to quit your job to live an
-          active, adventurous, and spiritually grounded life. Between weekdays at our desks and
-          weekends on trails, highways, and forts, we document practical blueprints so other couples
-          can explore confidently.
-        </p>
-      </div>
-      <div class="ethos-box">
-        <h3>Community Guidelines</h3>
-        <p>
-          Bhagyomi is dedicated to Dharmic heritage, outdoor adventure, wholesome living, and
-          selfless seva. Everyone is welcome to follow, learn, and explore our guides. To keep this
-          space peaceful and focused, off-topic religious debates or proselytizing are not permitted.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer (AdSense-ready structure) -->
-  <footer id="contact" class="footer">
+  <footer class="footer">
     <div class="container footer-inner">
-      <div>
-        <div class="brand">BHAGYOMI<span>.</span></div>
-        <p class="footer-sub">Adventure • Dharma • Kitchen • Seva</p>
-      </div>
+      <a href="index.html" class="brand-wrap">
+        <div class="logo-ring">
+          <img src="assets/images/logo.jpg" alt="Bhagyomi Logo" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">BHAGYOMI</span>
+          <span class="brand-sub">A Sanatan Yatra</span>
+        </div>
+      </a>
       <div class="footer-links">
-        <a href="#about">About Us</a>
-        <a href="mailto:hello@bhagyomi.com">Contact</a>
-        <a href="#about" id="privacyLink">Privacy Policy</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact & Collabs</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://www.instagram.com/bhagyomidiaries/" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
     <div class="container copyright">
-      © <span id="year"></span> Bhagyomi. All rights reserved.
+      © <span id="year"></span> Bhagyomi (www.bhagyomi.com). All rights reserved.
     </div>
   </footer>
 
-  <!-- Interactive Guide Preview Modal -->
   <div class="modal-backdrop" id="guideModal" aria-hidden="true">
     <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <button class="modal-close" id="modalClose" aria-label="Close preview">×</button>
@@ -225,7 +214,7 @@
       <h3 id="modalTitle"></h3>
       <p id="modalBody"></p>
       <div class="modal-footer">
-        <small>Tip: When your full article is ready, replace this preview button with a direct link like <code>/treks/moroshi-bhairavgad.html</code>.</small>
+        <small>Follow <a href="https://www.instagram.com/bhagyomidiaries/" target="_blank" rel="noopener">@bhagyomidiaries</a> for live release updates.</small>
       </div>
     </div>
   </div>

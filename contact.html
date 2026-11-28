@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Bhagyomi for trek questions, community cleanup drives, fort restoration events, and brand collaborations." />
+  <title>Contact Us | Bhagyomi — A Sanatan Yatra</title>
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand-wrap">
+        <div class="logo-ring">
+          <img src="assets/images/logo.jpg" alt="Bhagyomi Logo" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">BHAGYOMI</span>
+          <span class="brand-sub">A Sanatan Yatra</span>
+        </div>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#pillars">Explore</a>
+        <a href="index.html#guides">Guides</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active-link">Contact</a>
+        <a href="https://www.instagram.com/bhagyomidiaries/" target="_blank" rel="noopener" class="nav-cta">@bhagyomidiaries</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      <h1>Get in Touch With Bhagyomi</h1>
+      <p>Questions about a trek route, registering for our next cleanup drive, or brand partnerships — drop us a message below.</p>
+    </div>
+  </section>
+
+  <main class="section">
+    <div class="container contact-grid">
+      <div class="form-card">
+        <h2 style="color: var(--maroon); margin-bottom: 16px;">Send a Message</h2>
+        <!-- Get a free key at https://web3forms.com and replace YOUR_WEB3FORMS_ACCESS_KEY -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="New Message from Bhagyomi.com" />
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="topic">Reason for Reaching Out</label>
+            <select id="topic" name="topic">
+              <option value="Trek or Travel Question">Trek / Travel Guide Question</option>
+              <option value="Community Seva / Event">Join Upcoming Cleanup / Plantation / Trek</option>
+              <option value="Brand Collaboration">Brand Collaboration / Sponsorship</option>
+              <option value="General Feedback">General Feedback</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Share your details here..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+
+      <div>
+        <div class="ethos-box" style="margin-bottom: 20px;">
+          <h3 style="color: var(--maroon); margin-bottom: 10px;">Direct Channels</h3>
+          <p style="margin-bottom: 10px;"><strong>Instagram:</strong> <a href="https://www.instagram.com/bhagyomidiaries/" target="_blank" rel="noopener" style="color: var(--saffron);">@bhagyomidiaries</a></p>
+          <p style="margin-bottom: 10px;"><strong>Location:</strong> Mumbai / Maharashtra, India</p>
+          <p><strong>Response Time:</strong> We usually reply within 24–48 hours (around our weekday engineering schedules).</p>
+        </div>
+
+        <div class="ethos-box" style="border-left-color: var(--saffron);">
+          <h3 style="color: var(--maroon); margin-bottom: 10px;">Brand Collaborations</h3>
+          <p>We partner with outdoor trekking gear, riding accessories, endurance nutrition, eco-friendly travel, homestay, and kitchen brands that align with our authentic weekend lifestyle. Include your campaign goals and timeline in your message.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="brand-wrap">
+        <div class="logo-ring">
+          <img src="assets/images/logo.jpg" alt="Bhagyomi Logo" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">BHAGYOMI</span>
+          <span class="brand-sub">A Sanatan Yatra</span>
+        </div>
+      </a>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact & Collabs</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://www.instagram.com/bhagyomidiaries/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="container copyright">
+      © <span id="year"></span> Bhagyomi (www.bhagyomi.com). All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
