@@ -87,3 +87,50 @@ if (modal) {
   modal.addEventListener("click", (e) => { if (e.target === modal) closeModal(); });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
 }
+
+// Photo Gallery Lightbox (works on any article page that has #trekGallery)
+const galleryCards = Array.from(document.querySelectorAll("#trekGallery .gallery-card"));
+const lightbox = document.getElementById("lightbox");
+
+if (galleryCards.length && lightbox) {
+  const lightboxImg = document.getElementById("lightboxImg");
+  const lightboxCaption = document.getElementById("lightboxCaption");
+  const lightboxClose = document.getElementById("lightboxClose");
+  const lightboxPrev = document.getElementById("lightboxPrev");
+  const lightboxNext = document.getElementById("lightboxNext");
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    currentIndex = (index + galleryCards.length) % galleryCards.length;
+    const img = galleryCards[currentIndex].querySelector("img");
+    const caption = galleryCards[currentIndex].querySelector("figcaption");
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = caption ? caption.textContent : "";
+  }
+
+  galleryCards.forEach((card, idx) => {
+    card.addEventListener("click", () => {
+      showSlide(idx);
+      lightbox.classList.add("open");
+      lightbox.setAttribute("aria-hidden", "false");
+    });
+  });
+
+  const closeLightbox = () => {
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+  };
+
+  lightboxClose.addEventListener("click", closeLightbox);
+  lightboxPrev.addEventListener("click", () => showSlide(currentIndex - 1));
+  lightboxNext.addEventListener("click", () => showSlide(currentIndex + 1));
+  lightbox.addEventListener("click", (e) => { if (e.target === lightbox) closeLightbox(); });
+
+  document.addEventListener("keydown", (e) => {
+    if (!lightbox.classList.contains("open")) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowLeft") showSlide(currentIndex - 1);
+    if (e.key === "ArrowRight") showSlide(currentIndex + 1);
+  });
+}
