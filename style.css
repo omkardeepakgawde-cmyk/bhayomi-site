@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap');
+
 :root {
   --bg: #fffbf2;
   --bg-alt: #f7eddc;
@@ -892,4 +894,44 @@ img {
 .lightbox-close:hover,
 .lightbox-nav:hover {
   background: var(--saffron);
+}
+
+/* Marathi Typography & Language Switcher */
+html[lang="mr"] body {
+  font-family: "Noto Sans Devanagari", system-ui, -apple-system, sans-serif;
+  line-height: 1.85;
+}
+
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--bg-alt);
+  font-size: 0.82rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.lang-toggle a,
+.lang-toggle span {
+  padding: 5px 11px;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.lang-toggle a {
+  color: var(--maroon);
+  transition: background 0.2s, color 0.2s;
+}
+
+.lang-toggle a:hover {
+  background: rgba(217, 93, 14, 0.14);
+  color: var(--saffron);
+}
+
+.lang-toggle .lang-active {
+  background: var(--saffron);
+  color: #ffffff;
 }
